@@ -1,0 +1,61 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;        /* Fuente de texto */
+    background-color: #eef4fc;             /* Fondo azul muy claro */
+    text-align: center;                    /* Centra todo el texto */
+    margin: 40px;                          /* Márgenes alrededor del contenido */
+    color: #222;                           /* Color del texto general (gris oscuro) */
+}
+
+/* Título principal */
+h1 {
+    color: #0d47a1;                        /* Azul fuerte para el título */
+    margin-bottom: 25px;                   /* Espacio debajo del título */
+}
+
+/* Diseño de la cuadrícula 3x3 para los botones */
+.matris {
+    display: grid;                         /* Activa el modo grid (cuadrícula) */
+    grid-template-columns: repeat(3, 60px); /* 3 columnas de 60px cada una */
+    grid-template-rows: repeat(3, 60px);   /* 3 filas de 60px cada una */
+    gap: 12px;                             /* Espacio entre los botones */
+    justify-content: center;               /* Centrar la cuadrícula horizontalmente */
+    margin-bottom: 20px;                   /* Espacio debajo de la cuadrícula */
+}
+
+/* Estilo de cada botón numérico */
+.num {
+    background-color: #2196f3;             /* Azul para los botones */
+    color: white;                          /* Texto en blanco */
+    font-size: 24px;                       /* Tamaño grande del número */
+    line-height: 60px;                     /* Altura igual al alto para centrar el texto verticalmente */
+    border-radius: 8px;                    /* Bordes redondeados */
+    cursor: pointer;                       /* Cursor tipo mano al pasar el mouse */
+    user-select: none;                     /* Evita que el texto sea seleccionable */
+    transition: background-color 0.3s;     /* Transición suave de color al hacer hover */
+}
+
+/* Cambio de color al pasar el mouse sobre un botón */
+.num:hover {
+    background-color: #1565c0;             /* Azul más oscuro al hacer hover */
+}
+
+/* Botones deshabilitados después de fallo */
+.num.disabled {
+    background-color: #b0bec5;             /* Gris para botones desactivados */
+    cursor: not-allowed;                   /* Cambia el cursor a "no permitido" */
+}
+
+/* Área donde se muestra el mensaje al usuario */
+#mensaje {
+    font-size: 20px;                       /* Tamaño del texto del mensaje */
+    color: #333;                           /* Color gris oscuro para el mensaje */
+    min-height: 30px;                      /* Altura mínima para evitar que salte el diseño */
+    display: inline-block;                 /* Se comporta como bloque en línea */
+    margin-top: 10px;                      /* Espacio arriba del mensaje */
+    padding: 5px 10px;                     /* Espaciado interno */
+    border: 1px solid #ccc;                /* Borde gris claro */
+    border-radius: 6px;                    /* Bordes redondeados */
+    background-color: #f9f9f9;             /* Fondo blanco grisáceo */
+    user-select: none;                     /* Evita que el usuario seleccione el texto */
+}

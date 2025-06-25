@@ -1,0 +1,104 @@
+/*Estilo base del cuerpo de la página  */
+body {
+    background-color: #f0f8ff;            /* Fondo azul muy claro */
+    font-family: 'Segoe UI', Tahoma, sans-serif; /* Fuente legible y moderna */
+    margin: 30px;                         /* Margen alrededor del contenido */
+    color: #1a1a1a;                       /* Color general del texto */
+    line-height: 1.8;                     /* Espaciado entre líneas */
+}
+
+/* Encabezado principal  */
+header {
+    background-color: #0d47a1;            /* Azul oscuro fuerte */
+    color: #fff;                          /* Texto blanco */
+    text-align: center;                   /* Centrado horizontal */
+    padding: 30px 20px;                   /* Relleno interno */
+    border-radius: 12px;                  /* Bordes redondeados */
+    margin-bottom: 35px;                  /* Espacio debajo del header */
+}
+
+/* Títulos de segundo nivel (secciones)  */
+h2 {
+    color: #1976d2;                       /* Azul medio */
+    border-bottom: 3px solid #64b5f6;     /* Línea decorativa inferior */
+    padding-bottom: 6px;                  /* Espacio debajo del texto */
+    margin-top: 40px;                     /* Espacio superior */
+    transition: transform 0.3s ease;      /* Transición suave */
+}
+
+h2:hover {
+    transform: scale(1.03);               /* Ligeramente más grande al pasar el mouse */
+    color: #0d47a1;                       /* Azul más intenso */
+}
+
+/*Títulos menores (h3 en los artículos)  */
+h3 {
+    margin-top: 25px;                     /* Espacio superior */
+    color: #1565c0;                       /* Azul más oscuro */
+}
+
+/*Secciones de contenido general  */
+section {
+    background-color: #ffffff;            /* Fondo blanco limpio */
+    padding: 20px;                        /* Espaciado interno */
+    border-left: 6px solid #2196f3;       /* Línea azul al lado izquierdo */
+    border-radius: 8px;                   /* Bordes suavemente redondeados */
+    margin-bottom: 25px;                  /* Espacio entre secciones */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+/*Artículos individuales de tipo  */
+article {
+    margin-bottom: 15px;                  /* Separación entre artículos */
+    padding: 12px 18px;                   /* Espacio interno */
+    background-color: #f9f9f9;            /* Fondo gris muy claro */
+    border-left: 4px solid #42a5f5;       /* Línea decorativa */
+    border-radius: 6px;                   /* Bordes redondeados */
+}
+
+/*Formato de párrafos  */
+p {
+    margin-bottom: 16px;                  /* Espacio después del párrafo */
+    text-align: justify;                  /* Texto justificado */
+}
+
+/* Estilo para fragmentos de código */
+code, pre {
+    background-color: #e3f2fd;            /* Azul suave de fondo */
+    padding: 5px 10px;                    /* Espacio alrededor del código */
+    border-radius: 6px;                   /* Bordes redondeados */
+    font-family: 'Courier New', monospace; /* Fuente tipo consola */
+    color: #2e7d32;                       /* Verde oscuro para resaltar */
+    display: inline-block;                /* Mejor formato en bloque */
+}
+
+/*Estilo para bloques completos de código  */
+pre {
+    overflow-x: auto;                     /* Permite desplazamiento horizontal si es necesario */
+    margin: 10px 0;                       /* Espacio arriba y abajo */
+}
+
+/* Lista de ejemplos de uso  */
+ul {
+    padding-left: 25px;                   /* Sangría izquierda */
+}
+
+li {
+    margin-bottom: 10px;                  /* Espacio entre ítems */
+}
+
+/* Estilo para los bloques de preguntas con <details> */
+details {
+    margin: 12px 0;                       /* Separación vertical */
+    background-color: #fafafa;            /* Fondo gris claro */
+    padding: 10px 15px;                   /* Relleno interno */
+    border-left: 4px solid #64b5f6;       /* Línea azul clara */
+    border-radius: 5px;                   /* Bordes suaves */
+}
+
+summary {
+    font-weight: bold;                    /* Resalta el texto del resumen */
+    cursor: pointer;                      /* Cursor tipo mano */
+    color: #1976d2;                       /* Azul medio */
+}
+

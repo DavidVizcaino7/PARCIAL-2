@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectores - Conceptos Esenciales</title>
+
+  <!-- Enlace al archivo de estilos CSS  -->
+  <link rel="stylesheet" href="Style.css">
+
+  <!-- Enlace al archivo de funciones JavaScript -->
+  <script src="Funciones.js"></script>
+</head>
+
+<body>
+
+  <!--  principal de la página -->
+  <header>
+    <h1>Los Selectores en CSS</h1>
+  </header>
+
+  <!--  la definición de selectores -->
+  <section>
+    <h2>¿Qué son los selectores?</h2>
+    <p>
+      Los <strong>selectores CSS</strong> son instrucciones que nos permiten identificar a qué elementos HTML queremos aplicar estilos. 
+      Con ellos, podemos cambiar colores, tamaños, márgenes y mucho más.
+    </p>
+  </section>
+
+  <!--  selector en código CSS -->
+  <section>
+    <h2>¿Cómo se usan en el código?</h2>
+    <p>
+      La forma básica de usar un selector consiste en escribir su nombre, abrir llaves <code>{}</code> y dentro colocar las propiedades de estilo. Ejemplo:
+    </p>
+
+    <!-- Ejemplo de código CSS mostrado al usuario -->
+    <pre><code>
+h1 {
+  color: navy;
+  font-weight: bold;
+}
+    </code></pre>
+  </section>
+
+  <!-- Sección sobre los tipos de selectores más comunes (sin usar tabla) -->
+  <section>
+    <h2>Tipos más comunes de selectores (sin tabla)</h2>
+
+    <!-- Cada tipo de selector explicado en un artículo separado -->
+    <article>
+      <h3>Selector de Etiqueta</h3>
+      <p>Selecciona todos los elementos de un tipo. Ejemplo: <code>p</code> afecta a todos los párrafos.</p>
+    </article>
+
+    <article>
+      <h3>Selector de Clase</h3>
+      <p>Aplica estilos a elementos que tengan una clase específica. Ejemplo: <code>.importante</code>.</p>
+    </article>
+
+    <article>
+      <h3>Selector de ID</h3>
+      <p>Se usa para un solo elemento con un ID único. Ejemplo: <code>#menu</code>.</p>
+    </article>
+
+    <article>
+      <h3>Selector Universal</h3>
+      <p>Aplica estilos a todos los elementos. Ejemplo: <code>*</code>.</p>
+    </article>
+
+    <article>
+      <h3>Selector Descendiente</h3>
+      <p>Aplica estilos a un elemento dentro de otro. Ejemplo: <code>div p</code> afecta a párrafos dentro de divs.</p>
+    </article>
+
+    <article>
+      <h3>Selector de Hijo Directo</h3>
+      <p>Afecta solo a hijos directos de un elemento. Ejemplo: <code>ul > li</code>.</p>
+    </article>
+
+    <article>
+      <h3>Selector por Atributo</h3>
+      <p>Selecciona elementos según atributos específicos. Ejemplo: <code>input[type="text"]</code>.</p>
+    </article>
+
+    <article>
+      <h3>Pseudoclases</h3>
+      <p>Aplica estilos en ciertos estados. Ejemplo: <code>a:hover</code> cuando el mouse pasa sobre un enlace.</p>
+    </article>
+
+    <article>
+      <h3>Pseudoelementos</h3>
+      <p>Permiten modificar partes de un elemento. Ejemplo: <code>p::first-letter</code> estiliza la primera letra de un párrafo.</p>
+    </article>
+
+  </section>
+
+  <!--  ejemplos prácticos de selectores -->
+  <section>
+    <h2>Ejemplos aplicados</h2>
+    <ul>
+      <li><code>h2</code>: Cambiar el color de todos los subtítulos.</li>
+      <li><code>.destacado</code>: Resaltar mensajes importantes.</li>
+      <li><code>#pie</code>: Personalizar el footer de la página.</li>
+    </ul>
+  </section>
+
+  <!--  <details> para desplegar contenido -->
+  <section>
+    <h2>Dudas frecuentes</h2>
+
+    <details>
+      <summary>¿DATOS ADICIONALES?</summary>
+      <p>Sí, puedes crear selectores combinados como <code>div.alerta</code> o <code>#contenido p</code>.</p>
+    </details>
+
+    <details>
+      <summary>¿QUÉ SELECTOR TIENE MÁS PRIORIDAD?</summary>
+      <p>En orden de mayor a menor prioridad: ID, Clase, Elemento, Universal.</p>
+    </details>
+
+  </section>
+
+</body>
+</html>

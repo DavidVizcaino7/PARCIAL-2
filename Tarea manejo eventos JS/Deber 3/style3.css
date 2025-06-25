@@ -1,0 +1,57 @@
+/* Estilo general del cuerpo: fuente, color de fondo y alineación centrada en pantalla */
+body {
+    font-family: Arial, sans-serif;          /* Fuente para todo el documento */
+    background-color: #f0f4f8;               /* Fondo azul muy claro */
+    display: flex;                           /* Uso de Flexbox para centrar contenido */
+    justify-content: center;                 /* Centra horizontalmente */
+    align-items: center;                     /* Centra verticalmente */
+    height: 100vh;                           /* Altura completa de la ventana del navegador */
+}
+
+/* Contenedor principal del contenido */
+main {
+    background-color: #ffffff;               /* Fondo blanco */
+    padding: 30px;                           /* Espaciado interno */
+    border-radius: 10px;                     /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    text-align: center;                      /* Centra el texto dentro */
+}
+
+/* Estilo para inputs y el select */
+input, select {
+    display: block;                          /* Cada uno ocupa su propia línea */
+    margin: 10px auto;                       /* Separación y centrado horizontal */
+    padding: 10px;                           /* Espaciado interno */
+    width: 220px;                            /* Ancho fijo */
+    border-radius: 5px;                      /* Bordes suaves */
+    border: 1px solid #ccc;                  /* Borde gris claro */
+    outline: none;                           /* Quita el borde de foco por defecto */
+}
+
+/* Estilo para resultado positivo y par */
+.result-par {
+    background-color: #c8e6c9;               /* Fondo verde claro */
+    color: #1b5e20;                          /* Texto verde oscuro */
+    font-weight: bold;                       /* Texto en negrita */
+}
+
+/* Estilo para resultado negativo o impar */
+.result-impar-negativo {
+    background-color: #ffcdd2;               /* Fondo rojo claro */
+    color: #b71c1c;                          /* Texto rojo oscuro */
+    font-weight: bold;                       /* Texto en negrita */
+}
+
+/* Otra clase alternativa para resultado positivo-par (posible duplicado pero por si acaso lo usas) */
+.positivo-par {
+    background-color: #c8e6c9;               /* Fondo verde claro */
+    color: #1b5e20;                          /* Texto verde oscuro */
+    font-weight: bold;
+}
+
+/* Otra clase alternativa para resultado impar o negativo */
+.otro {
+    background-color: #ffcdd2;               /* Fondo rojo claro */
+    color: #b71c1c;                          /* Texto rojo oscuro */
+    font-weight: bold;
+}

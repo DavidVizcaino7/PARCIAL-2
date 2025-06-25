@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos HTML vs JS (Consola)</title>
+    <link rel="stylesheet" href="Style2.css">
+    <script src="funciones2.js" defer></script>
+</head>
+
+<body onload="eventoOnload()">
+
+<h2>Eventos HTML (uso de atributos)</h2>
+
+<!-- onclick -->
+<button onclick="eventoOnClick()">Click (HTML)</button>
+
+<!-- onchange -->
+<select onchange="eventoOnChange()">
+    <option value="">Elige</option>
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+</select>
+
+<!-- oninput -->
+<input type="text" placeholder="Escribe algo..." oninput="eventoOnInput()">
+
+<!-- onmouseover / onmouseout -->
+<div onmouseover="eventoOnMouseOver()" onmouseout="eventoOnMouseOut()" style="background:#f0f0f0; padding:10px; margin:10px 0;">
+    Pasa el mouse aquí (HTML)
+</div>
+
+<!-- onkeydown / onkeyup -->
+<input type="text" placeholder="Teclado HTML" onkeydown="eventoOnKeyDown()" onkeyup="eventoOnKeyUp()">
+
+<!-- onfocus / onblur -->
+<input type="text" placeholder="Focus / Blur HTML" onfocus="eventoOnFocus()" onblur="eventoOnBlur()">
+
+<hr>
+
+<h2>Eventos con addEventListener (JS)</h2>
+
+<button id="btnJS">Click (JS)</button>
+
+<select id="selectJS">
+    <option value="">Selecciona</option>
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+</select>
+
+<input type="text" id="inputJS" placeholder="Input JS">
+
+<div id="areaMouse" style="background:#e0f7fa; padding:10px; margin:10px 0;">
+    Pasa el Mouse aquí (JS)
+</div>
+
+<input type="text" id="teclasJS" placeholder="Teclado JS">
+
+<input type="text" id="focusBlurJS" placeholder="Focus / Blur JS">
+
+</body>
+</html>
