@@ -1,16 +1,30 @@
 <!DOCTYPE html>
+<!-- Tipo de documento: HTML5 -->
+
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
+    <!-- Codificación de caracteres en español -->
+
     <title>Juego: Adivina el Número Secreto</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
     <link rel="stylesheet" href="Style.css">
+    <!-- Enlace al archivo de estilos CSS -->
+
     <script src="Funciones.Js"></script>
+    <!-- Enlace al archivo JavaScript con la lógica del juego -->
 </head>
+
 <body>
 
     <h1>Encuentra el número secreto</h1>
+    <!-- Título principal del juego -->
 
     <div class="matris">
+        <!-- Contenedor de la matriz de números (tipo tablero) -->
+
+        <!-- Cada número es un botón interactivo -->
         <div class="num" data-num="1">1</div>
         <div class="num" data-num="2">2</div>
         <div class="num" data-num="3">3</div>
@@ -20,8 +34,11 @@
         <div class="num" data-num="7">7</div>
         <div class="num" data-num="8">8</div>
         <div class="num" data-num="9">9</div>
+        <!-- Cada div representa un número que el jugador puede seleccionar -->
     </div>
 
     <label id="mensaje">Presiona un botón...</label>
+    <!-- Mensaje para dar instrucciones o mostrar el resultado -->
+    
 </body>
 </html>
