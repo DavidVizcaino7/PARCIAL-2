@@ -3,63 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Catálogo Zapatos Deportivos</title>
-    <!-- Enlace al archivo CSS de Bootstrap en modo offline -->
+    <!-- Enlace al CSS de Bootstrap (modo offline con base_url) -->
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>">
 </head>
-<body>
-<div class="container mt-4">
-    <!-- Título principal de la página -->
-    <h2>Catálogo Zapatos Deportivos</h2>
+<body class="bg-white">
+<div class="container py-5">
+    <!-- Título principal centrado con color primario y espacio inferior -->
+    <h2 class="text-center text-primary mb-5">Catálogo Zapatos Deportivos</h2>
     
-    <!-- Fila para organizar las cards en columnas -->
-    <div class="row">
-        <!-- Producto 1 -->
+    <!-- Fila que centra las cards en el contenedor -->
+    <div class="row justify-content-center">
+        
+        <!-- Primera tarjeta (producto) -->
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <!-- Imagen del producto, cargada desde la carpeta pública -->
+            <div class="card border-primary">
+                <!-- Imagen del producto -->
                 <img src="<?= base_url('public/img/deportivo1.jpg') ?>" class="card-img-top" alt="Zapato Deportivo 1">
-                
-                <!-- Cuerpo de la card con título, precio y botón -->
-                <div class="card-body">
+                <div class="card-body text-center">
                     <!-- Nombre del producto -->
                     <h5 class="card-title">Zapato Deportivo 1</h5>
-                    <!-- Precio aproximado -->
+                    <!-- Precio -->
                     <p class="card-text">Precio: $45.00</p>
-                    <!-- Botón simulado para agregar al carrito -->
-                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    <!-- Botón para simular agregar al carrito -->
+                    <a href="#" class="btn btn-outline-primary">Agregar al carrito</a>
                 </div>
             </div>
         </div>
-
-        <!-- Producto 2 -->
+        
+        <!-- Segunda tarjeta -->
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <!-- Imagen del producto -->
+            <div class="card border-primary">
                 <img src="<?= base_url('public/img/deportivo2.jpg') ?>" class="card-img-top" alt="Zapato Deportivo 2">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Zapato Deportivo 2</h5>
                     <p class="card-text">Precio: $50.00</p>
-                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn btn-outline-primary">Agregar al carrito</a>
                 </div>
             </div>
         </div>
-
-        <!-- Producto 3 -->
+        
+        <!-- Tercera tarjeta -->
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <!-- Imagen del producto -->
+            <div class="card border-primary">
                 <img src="<?= base_url('public/img/deportivo3.jpg') ?>" class="card-img-top" alt="Zapato Deportivo 3">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Zapato Deportivo 3</h5>
                     <p class="card-text">Precio: $55.00</p>
-                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn btn-outline-primary">Agregar al carrito</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Script de Bootstrap para funcionalidades JavaScript, también en modo offline -->
+<!-- Script de Bootstrap para funcionalidades como dropdowns o modals -->
 <script src="<?= base_url('public/js/bootstrap.bundle.min.js') ?>"></script>
 </body>
 </html>
